@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lopsa.kotlinapp.IntentsActivity"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+    <Button
+        android:id="@+id/btnCamera"
+        android:text="@string/camera"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"/>
+    <Button
+        android:id="@+id/btnCall"
+        android:text="@string/call"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"/>
+    <Button
+        android:id="@+id/btnSms"
+        android:text="@string/sms"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"/>
+    <Button
+        android:id="@+id/btnWeb"
+        android:text="@string/web"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"/>
+    <Button
+        android:id="@+id/btnShare"
+        android:text="@string/share"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"/>
+    <Button
+        android:id="@+id/btnEmail"
+        android:text="@string/email"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"/>
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lopsa.kotlinapp.DialogActivity"
+    android:orientation="vertical"
+    android:layout_margin="15dp">
+
+    <Button
+        android:id="@+id/btnToas"
+        android:text="@string/toas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"/>
+    <Button
+        android:id="@+id/btnSnackBar"
+        android:text="@string/snackbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"/>
+    <Button
+        android:id="@+id/btnAlert"
+        android:text="@string/alert"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"/>
+    <Button
+        android:id="@+id/btnSelector"
+        android:text="@string/selector"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"
+        android:weightSum="1"
+        >
+
+        <Button
+            android:id="@+id/btnProgressDialog"
+            android:text="@string/progresDialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"/>
+        <Button
+            android:id="@+id/btnProgressDialog2"
+            android:text="@string/progresDialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

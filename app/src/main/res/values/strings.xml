@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">KotlinApp</string>
+    <string name="intent">Intent</string>
+    <string name="call">llamar</string>
+    <string name="email">Send Email</string>
+    <string name="share">Compartir</string>
+    <string name="web">Ir ala Web</string>
+    <string name="sms">Enviar sms</string>
+    <string name="camera">Camara</string>
+    <string name="dialog">Dialogos</string>
+    <string name="toas">Toasts</string>
+    <string name="snackbar">SnackBars</string>
+    <string name="alert">Alerts</string>
+    <string name="selector">Selectors</string>
+    <string name="progresDialog">Progress dialogs</string>
+</resources>
