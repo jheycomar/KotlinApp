@@ -3,12 +3,9 @@ package com.lopsa.kotlinapp
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
-import org.jetbrains.anko.design.longSnackbar
+import org.jetbrains.anko.*
 import org.jetbrains.anko.design.snackbar
-import org.jetbrains.anko.intentFor
-import org.jetbrains.anko.toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,8 +23,33 @@ class MainActivity : AppCompatActivity() {
                 snackbar(v, "Action, reaction", "Click me!") { doStuff() }
             }
         })
+
+        btntaskAsync.setOnClickListener(object :View.OnClickListener{
+            override fun onClick(v: View?) {
+               startActivity(intentFor<TasksinthebackgroundActivity>())
+            }
+        })
+
+        btnIntentcomprovate.setOnClickListener{
+           val helper= ConexionNetwordService()
+           var conexion =helper.compruebaConexion(this)
+            if (conexion==true){
+                alert("Conexion Exitosa","USTED TIENE CONEXION A INTERNET") {
+                    yesButton {longToast("acepto su conexion")  }
+                    noButton {longToast("cancelo su conexion")  }
+                }.show()
+
+            }else{
+              longToast("Berifique su conexion a Internet")
+            }
+        }
+
     }
+
     fun doStuff(){
         toast("Click Snackbar")
     }
+
+
+
 }

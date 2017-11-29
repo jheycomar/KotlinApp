@@ -13,4 +13,5 @@
     <string name="alert">Alerts</string>
     <string name="selector">Selectors</string>
     <string name="progresDialog">Progress dialogs</string>
+    <string name="taskasync">Tareas Async</string>
 </resources>
