@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lopsa.kotlinapp.PlacesActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="73dp">
+
+    <TextView
+        android:id="@+id/lblCiudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="16dp"
+        android:text="Merida,MX"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imgViewIcon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgViewIcon"
+        android:layout_width="189dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="#ffff"
+        app:layout_constraintBottom_toTopOf="@+id/lblViewTemp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblCiudad" />
+
+    <TextView
+        android:id="@+id/lblViewTemp"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginStart="38dp"
+        android:text="15 C"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imgViewIcon"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblViento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imgViewIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Viento" />
+
+    <TextView
+        android:id="@+id/lblNuve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Nube"
+        app:layout_constraintStart_toStartOf="@+id/lblViento"
+        app:layout_constraintTop_toBottomOf="@+id/lblViento" />
+
+    <TextView
+        android:id="@+id/lblPresion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Presion"
+        app:layout_constraintStart_toStartOf="@+id/lblNuve"
+        app:layout_constraintTop_toBottomOf="@+id/lblNuve" />
+
+    <TextView
+        android:id="@+id/lblUmedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="Humedad"
+        app:layout_constraintStart_toStartOf="@+id/lblupdate"
+        app:layout_constraintTop_toBottomOf="@+id/lblsunset" />
+
+    <TextView
+        android:id="@+id/lblsunrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Puesta del sol"
+        app:layout_constraintStart_toStartOf="@+id/lblPresion"
+        app:layout_constraintTop_toBottomOf="@+id/lblPresion" />
+
+    <TextView
+        android:id="@+id/lblsunset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="Amanecer"
+        app:layout_constraintStart_toStartOf="@+id/lblUmedad"
+        app:layout_constraintTop_toBottomOf="@+id/lblsunrice" />
+
+    <TextView
+        android:id="@+id/lblupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:layout_marginStart="55dp"
+        android:text="Ultima actualizacion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgViewIcon" />
+</android.support.constraint.ConstraintLayout>

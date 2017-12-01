@@ -14,4 +14,8 @@
     <string name="selector">Selectors</string>
     <string name="progresDialog">Progress dialogs</string>
     <string name="taskasync">Tareas Async</string>
+    <string name="hint">¿A donde quieres ir?</string>
+    <string name="internet">Verificar Conexion</string>
+    <string name="places">Lugares</string>
+    <string name="weather">Datos del tiempo</string>
 </resources>

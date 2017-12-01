@@ -3,6 +3,7 @@ package com.lopsa.kotlinapp
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.lopsa.kotlinapp.services.ConexionNetwordService
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.*
 import org.jetbrains.anko.design.snackbar
@@ -43,6 +44,10 @@ class MainActivity : AppCompatActivity() {
               longToast("Berifique su conexion a Internet")
             }
         }
+
+        btnPlace.setOnClickListener { startActivity(intentFor<PlacesActivity>())}
+
+
 
     }
 

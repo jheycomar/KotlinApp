@@ -1,4 +1,4 @@
-package com.lopsa.kotlinapp
+package com.lopsa.kotlinapp.services
 
 import android.content.Context
 import android.net.ConnectivityManager

@@ -3,7 +3,15 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
+String getApiKey() {
+    try {
+        Properties properties = new Properties()
+        properties.load(project.rootProject.file('local.properties').newDataInputStream())
+        return properties.getProperty('api.key')
+    } catch (Exception ignored) {}
 
+    return "empty"
+}
 android {
     compileSdkVersion 26
     defaultConfig {
@@ -13,6 +21,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "GOOGLE_MAPS_API_KEY", "\"${getApiKey()}\""
     }
     buildTypes {
         release {
@@ -44,4 +53,9 @@ dependencies {
     // RecyclerView-v7
     compile "org.jetbrains.anko:anko-recyclerview-v7:$anko_version"
     compile "org.jetbrains.anko:anko-recyclerview-v7-coroutines:$anko_version"
+    //imagen circle
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.google.android.gms:play-services-maps:11.6.2'
+    //librery
+    implementation'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
 }

@@ -5,8 +5,11 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import com.lopsa.kotlinapp.services.ConexionNetwordService
 import kotlinx.android.synthetic.main.activity_tasksinthebackground.*
 import org.jetbrains.anko.*
+import org.jetbrains.anko.design.snackbar
 import java.io.IOException
 import java.net.HttpURLConnection
 import java.net.URL
@@ -35,11 +38,9 @@ class TasksinthebackgroundActivity : AppCompatActivity() {
             }
 
         }else{
+
             longToast("Berifique su conexion a Internet")
         }
-
-
-
 
     }
     //funcion o metodo  que carga la imagen
@@ -58,4 +59,6 @@ class TasksinthebackgroundActivity : AppCompatActivity() {
         }
         return image
     }
+
+
 }
