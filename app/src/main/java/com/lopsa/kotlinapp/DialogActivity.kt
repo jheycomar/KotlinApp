@@ -61,7 +61,7 @@ class DialogActivity : AppCompatActivity() {
         }
 
         btnSelector.setOnClickListener {
-            val countries = listOf("Russia", "USA", "Japan", "Australia")
+            val countries = listOf("Russia", "USA", "Japan", "Australia","Bolivia")
             selector("Where are you from?", countries, { dialogInterface, i ->
                 toast("So you're living in ${countries[i]}, right?")
             })

@@ -3,15 +3,18 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
+
 String getApiKey() {
     try {
         Properties properties = new Properties()
         properties.load(project.rootProject.file('local.properties').newDataInputStream())
         return properties.getProperty('api.key')
-    } catch (Exception ignored) {}
+    } catch (Exception ignored) {
+    }
 
     return "empty"
 }
+
 android {
     compileSdkVersion 26
     defaultConfig {
@@ -57,5 +60,5 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:2.2.0'
     implementation 'com.google.android.gms:play-services-maps:11.6.2'
     //librery
-    implementation'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    implementation 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
 }

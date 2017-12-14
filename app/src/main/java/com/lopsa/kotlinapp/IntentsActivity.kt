@@ -23,6 +23,10 @@ class IntentsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_intents)
+
+        //flecha atras
+        supportActionBar!!.setDisplayShowHomeEnabled(true)
+
         btnCamera.setOnClickListener {
             //abrir camara
             val intentCamera = Intent("android.media.action.IMAGE_CAPTURE")

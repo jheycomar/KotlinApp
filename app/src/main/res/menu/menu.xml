@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-<item android:id="@+id/menucambiar"
-    android:title="Cambiar Ciuddad"
-    app:showAsAction="always"/>
+    <item android:id="@+id/menucambiar"
+        android:title="Cambiar Ciuddad"
+        app:showAsAction="always"/>
+    <item android:id="@+id/add"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="ADD"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom"/>
+    <item android:id="@+id/search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="delite"
+        android:orderInCategory="2"
+        android:showAsAction="ifRoom"/>
+    <item android:id="@+id/edit"
+        android:title="example"
+        android:orderInCategory="3"
+        android:showAsAction="never"/>
+    <item android:id="@+id/delete"
+        android:title="setting"
+        android:orderInCategory="4"
+        android:showAsAction="never"/>
+
+
 </menu>

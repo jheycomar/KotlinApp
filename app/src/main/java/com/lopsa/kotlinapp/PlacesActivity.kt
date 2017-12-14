@@ -13,23 +13,14 @@ import android.os.AsyncTask
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
-import android.view.View.GONE
-import android.view.View.VISIBLE
 import android.widget.EditText
-import android.widget.LinearLayout
-import android.widget.ProgressBar
-import android.widget.TextView
-import com.lopsa.kotlinapp.services.ConexionNetwordService
+import com.lopsa.kotlinapp.services.INetwordConneccion
 import kotlinx.android.synthetic.main.activity_places.*
-import kotlinx.android.synthetic.main.activity_tasksinthebackground.*
 import org.apache.http.HttpStatus
 import org.apache.http.client.methods.HttpGet
 import org.apache.http.impl.client.DefaultHttpClient
-import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.indeterminateProgressDialog
 import org.jetbrains.anko.longToast
-import org.jetbrains.anko.uiThread
 import java.io.IOException
 import java.io.InputStream
 import java.util.*
@@ -44,8 +35,10 @@ class PlacesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_places)
+        //flecha atras
+      supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
-        val helper= ConexionNetwordService()
+        val helper= INetwordConneccion()
         var conexion =helper.compruebaConexion(this)
         if (conexion==true){
             //si hay internet carga la foto sino muestra un mensage

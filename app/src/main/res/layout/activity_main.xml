@@ -86,10 +86,11 @@
             android:text="@string/weather" />
 
         <Button
+            android:id="@+id/btnCalculator"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
-            android:text="" />
+            android:text="Calcutaor" />
     </LinearLayout>
 
 </LinearLayout>

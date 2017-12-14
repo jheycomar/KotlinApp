@@ -7,7 +7,7 @@ import android.net.NetworkInfo
 /**
  * Created by ADMIN on 29/11/2017.
  */
-class ConexionNetwordService {
+class INetwordConneccion {
 
     //esta funcioon es para ver si hay conexion a internet
     fun compruebaConexion(context: Context): Boolean {
