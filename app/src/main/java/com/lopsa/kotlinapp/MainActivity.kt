@@ -70,6 +70,7 @@ class MainActivity : AppCompatActivity() {
 
         btnCalculator.onClick { startActivity(intentFor<CalculatorActivity>()) }
 
+        btnGato.onClick { startActivity(intentFor<GatoActivity>()) }
     }
 
 

@@ -18,4 +18,6 @@
     <string name="internet">Verificar Conexion</string>
     <string name="places">Lugares</string>
     <string name="weather">Datos del tiempo</string>
+    <string name="calculadora">Calculator</string>
+    <string name="gato">juego Gato</string>
 </resources>

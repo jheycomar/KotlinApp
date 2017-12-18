@@ -18,6 +18,7 @@
         android:inputType="number"
         android:paddingTop="12pt"
         android:text="0"
+        android:background="@drawable/borde_redondo_edittext"
         android:textSize="30pt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.555"
